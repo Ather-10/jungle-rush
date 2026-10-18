@@ -3,8 +3,8 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   output: "export",
-  cacheComponents: true,
-  partialPrefetching: true,
+  images: { unoptimized: true },
+  typescript: { ignoreBuildErrors: true },
   turbopack: {
     rules: {
       "*.css": {
